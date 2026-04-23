@@ -50,8 +50,6 @@ legs off. {number} seconds to take in the ring of tributes all equidistant from 
 {adj} {noun2} shaped like a {noun3} with a curved tail, the mouth of which is at least twenty feet \
 high, spilling over with the things that will give us life here in the arena."
     
-
-
 def zombie_madlib():
     adj1 = input("Adjective: ")
     adj2 = input("Adjective: ")
@@ -67,9 +65,6 @@ and the streets were lined with these monsters holding {noun_plural_1} in their 
 Their eyes were red with hunger as they roamed around the city looking for {food}. \
 They were {adj2} and {adj3}, unknowing how to act in this human world... except eat {body_part_plural}!!!!"
     
-   
-
-
 if __name__ == "__main__":
     random_madlib = random.choice([zombie_madlib, hunger_games_madlib, hp_madlib, code_madlib])()
     print(random_madlib)
