@@ -13,5 +13,20 @@ def guess_number():
         else: 
             print("Your guess is high")
 
+def computer_guess():
+    low, high = 0, 100
+    feedback = ''
+    while feedback != 'c':
+        guessed_number = random.randint(low, high)
+        feedback = input(f"My guess is {guessed_number}, is it correct? ")
+        if feedback == 'h':
+            high = guessed_number-1
+        elif feedback == 'l':
+            low = guessed_number+1
+        elif feedback == 'c':
+            print(f"The computer has guessed correctly, it is {guessed_number}")
+            break
+
 if __name__ == "__main__":
-    guess_number()
+    # guess_number()
+    computer_guess()
