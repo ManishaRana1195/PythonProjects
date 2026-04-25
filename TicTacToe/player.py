@@ -25,7 +25,7 @@ class HumanPlayer(Player):
         super().__init__(letter)
 
     def get_move(self, valid_moves):
-        user_input = input("Enter your choice as shown (row,column): ")
+        user_input = input("\n Enter your choice as shown (row,column): ")
         choice = user_input.split(",")
         return int(choice[0]), int(choice[1])
 

@@ -50,7 +50,7 @@ if __name__ == "__main__":
     ticTacToe = TicTacToe()
     human_player_turn = False
     human_player = HumanPlayer("X")
-    compluter_player = ComputerPlayer("O")
+    computer_player = ComputerPlayer("O")
     player = None
     player_won = False
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
             player = human_player
         else:
             human_player_turn = True
-            player = compluter_player
+            player = computer_player
             print("Computer's turn")
             print("Thinking... ")
             time.sleep(5) 
